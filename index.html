@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lin's Escalator Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <!-- Title Screen -->
+        <div id="titleScreen" class="screen active">
+            <h1>Lin's Escalator Journey</h1>
+            <button id="playButton" class="main-button">Play</button>
+            <button id="loadButton" class="main-button">Load Game</button>
+            <div id="saveSlots" class="save-slots hidden">
+                <h3>Select Save Slot:</h3>
+                <button class="save-slot" data-slot="1">Slot 1</button>
+                <button class="save-slot" data-slot="2">Slot 2</button>
+                <button class="save-slot" data-slot="3">Slot 3</button>
+                <button id="cancelLoad" class="main-button">Cancel</button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen">
+            <!-- HUD -->
+            <div id="hud">
+                <div class="hud-item">
+                    <div id="pepperSprayIcon" class="inventory-icon greyed">🌶️</div>
+                    <span>Pepper Spray</span>
+                </div>
+                <div class="hud-item">
+                    <div id="dogIcon" class="inventory-icon greyed">🐕</div>
+                    <span>Dog Companion</span>
+                </div>
+                <div class="hud-item">
+                    <span>Level: <span id="levelDisplay">1</span></span>
+                </div>
+                <button id="saveButton" class="hud-button">Save</button>
+            </div>
+
+            <!-- Save Menu -->
+            <div id="saveMenu" class="save-menu hidden">
+                <h3>Select Save Slot:</h3>
+                <button class="save-slot" data-slot="1">Slot 1</button>
+                <button class="save-slot" data-slot="2">Slot 2</button>
+                <button class="save-slot" data-slot="3">Slot 3</button>
+                <button id="cancelSave" class="main-button">Cancel</button>
+            </div>
+
+            <!-- Game Canvas -->
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+            <!-- Controls Info -->
+            <div id="controls">
+                <p>WASD: Move | K: Use Escalator | F: Talk | Y/N: Choose</p>
+            </div>
+        </div>
+
+        <!-- Dialog Screen -->
+        <div id="dialogScreen" class="screen">
+            <div id="dialogBox">
+                <div id="npcName"></div>
+                <div id="dialogText"></div>
+                <div id="dialogChoices">
+                    <button id="yesButton" class="choice-button">Yes (Y)</button>
+                    <button id="noButton" class="choice-button">No (N)</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ending Screens -->
+        <div id="badEndingScreen" class="screen">
+            <div class="ending-content">
+                <h2>Bad Ending</h2>
+                <p>Lin was overpowered by the attackers...</p>
+                <p>She should have been better prepared.</p>
+                <button id="retryButton" class="main-button">Retry</button>
+            </div>
+        </div>
+
+        <div id="goodEndingScreen" class="screen">
+            <div class="ending-content">
+                <h2>Safe Arrival!</h2>
+                <p>Lin successfully defended herself and reached her hotel room safely.</p>
+                <p>Thanks to her preparation, she can rest peacefully tonight.</p>
+                <button id="continueButton" class="main-button">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
