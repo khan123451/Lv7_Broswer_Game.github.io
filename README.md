@@ -1,4 +1,4 @@
-# Lin's Escalator Journey
+# Elevator Journey
 
 A 2D single-player browser game where you guide Lin, a tired traveler, through a dangerous escalator journey from the ground floor to her hotel room.
 
@@ -15,7 +15,7 @@ A 2D single-player browser game where you guide Lin, a tired traveler, through a
 
 ## Game Story
 
-Lin is a tired traveler who needs to reach her hotel room on the 6th floor. She must ride the escalator through 6 levels, making crucial decisions that determine whether she survives the journey.
+Lam is a tired traveler who needs to reach her hotel room on the 6th floor. She must ride the escalator through 6 levels, making crucial decisions that determine whether she survives the journey.
 
 ## Controls
 
