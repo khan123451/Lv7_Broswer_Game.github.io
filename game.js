@@ -7,7 +7,7 @@
  * 3. The game will run entirely in the browser - no server required
  * 
  * CONTROLS:
- * - WASD: Move Lin around
+ * - WASD: Move Lam around
  * - K: Activate escalator control panel
  * - F: Talk to NPCs
  * - Y/N: Make dialogue choices
@@ -64,7 +64,7 @@ let keys = {};
 let nearestNPC = null;
 
 // Save/Load System
-const SAVE_KEY_PREFIX = 'lins_escalator_save_';
+const SAVE_KEY_PREFIX = 'lams_escalator_save_';
 
 // Visual Assets (SVG-based for crisp rendering)
 const sprites = {
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function createSprites() {
-    // Create Lin (Player) sprite
+    // Create Lam (Player) sprite
     sprites.player = createPlayerSprite();
     
     // Create NPC sprites
@@ -111,7 +111,7 @@ function createPlayerSprite() {
     canvas.height = 40;
     const ctx = canvas.getContext('2d');
     
-    // Draw Lin - a tired female traveler
+    // Draw Lam - a tired female traveler
     // Head
     ctx.fillStyle = '#FDBCB4'; // Skin tone
     ctx.beginPath();
@@ -596,7 +596,7 @@ function render() {
         ctx.fillText('DANGER!', attacker.x, attacker.y - 8);
     });
     
-    // Draw player (Lin)
+    // Draw player (Lam)
     ctx.drawImage(sprites.player, player.x, player.y);
     
     // Player name label
@@ -604,7 +604,7 @@ function render() {
     ctx.fillRect(player.x + 5, player.y - 20, 25, 15);
     ctx.fillStyle = '#fff';
     ctx.font = 'bold 10px Arial';
-    ctx.fillText('Lin', player.x + 8, player.y - 8);
+    ctx.fillText('Lam', player.x + 8, player.y - 8);
     
     // Draw interaction prompts with better styling
     if (nearestNPC && getDistance(player, nearestNPC) < 80) {
