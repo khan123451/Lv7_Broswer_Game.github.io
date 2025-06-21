@@ -19,7 +19,7 @@ Lam is a tired traveler who needs to reach her hotel room on the 6th floor. She 
 
 ## Controls
 
-- **WASD** - Move Lin up, left, down, right
+- **WASD** - Move Lam up, left, down, right
 - **K** - Activate escalator control panel to move to next floor
 - **F** - Talk to NPCs
 - **Y/N** - Select Yes or No in dialogue boxes
@@ -77,7 +77,7 @@ The game tracks:
 ## Art Assets
 
 Currently uses colored rectangles as placeholders:
-- **Lin** (Player): Blue rectangle
+- **Lam** (Player): Blue rectangle
 - **Kimi**: Red rectangle  
 - **Grandpa**: Purple rectangle
 - **Attackers**: Dark gray rectangles
